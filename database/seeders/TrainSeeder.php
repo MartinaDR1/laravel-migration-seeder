@@ -27,6 +27,7 @@ class TrainSeeder extends Seeder
             $train->number_coaches=$faker->numberBetween(4,9);
             $train->on_time=$faker->boolean();
             $train->cancelled=$faker->boolean();
+            $train->price = $faker->randomFloat(2, 10, 500);
             $train->save();
         }
     }
