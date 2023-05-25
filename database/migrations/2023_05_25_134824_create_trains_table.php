@@ -19,8 +19,8 @@ return new class extends Migration
             $table-> string('departure_station',100);
             $table->string('arrival_station', 100);
             $table->time('departure_times');
-            $table->time('arrival times');
-            $table->tinyInteger('train_code');
+            $table->time('arrival_times');
+            $table->string('train_code',4);
             $table->tinyInteger('number_coaches')->unsigned();
             $table->boolean('on_time')->default(true);
             $table->boolean('cancelled')->default(false);
