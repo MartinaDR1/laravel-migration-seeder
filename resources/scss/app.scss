@@ -1,1 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
+body{
+    background-color: lightgray;
+}
+.jumbo{
+    background-image: url(../img/frecciarossa1000.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}

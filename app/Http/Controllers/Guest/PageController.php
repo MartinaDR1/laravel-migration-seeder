@@ -8,9 +8,13 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function home(){
+        return view('home');
+    }
+
     public function index(){
         //dd(Train::all());
         $trains = Train::orderByDesc('id')->get();
-        return view('home', compact('trains'));
+        return view('trains', compact('trains'));
     }
 }
